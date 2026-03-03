@@ -47,3 +47,17 @@ Worked with Claude to write up a [step-by-step walk-through](understanding_tinya
 
 Now I'm developing vis_adder.py, which draws the output of each layer as a labeled heatmap, along with some notes about what's going on.  This is all done in Raylib, and you can zoom in/out to shift between overview and detail.  Also, you can change the inputs, and step forward and backward through generation of the output.
 
+It's pretty neat, and definitely aids in understanding.
+
+Things I want to try next time:
+- Add a hover pop-up that shows the calculations for one specific cell.
+- Develop a 4-digit version of this network (and then maybe a visualizer for that).
+- Make a spreadsheet version of this network (or the 5-digit version).  Should be doable, and may seem less "mysterious" to anyone comfy with spreadsheets.
+
+Actually, I went ahead and did the 4-digit version (tinyadder_4.py).  I'm also digging into the spreadsheet version.  ...It's pretty neat, actually: [this spreadsheet](https://docs.google.com/spreadsheets/d/1Hp-o8ylgEOQ-Hh6FBdYyocW7Czns4IN1kgLjPUR8AoY/edit?usp=sharing) actually implements the whole transformer, and correctly generates the next token in something like `1234+5678=0` (the next token in this case should be `6`, and it is).
+
+None of this would scale up to a model with millions of parameters, though.  I need to think more about how to properly visualize that.
+
+
+
+
