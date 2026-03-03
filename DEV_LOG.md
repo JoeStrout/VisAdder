@@ -45,3 +45,5 @@ Also unusual in this model: the author has fixed Q=K=0, i.e., zero weights inste
 
 Worked with Claude to write up a [step-by-step walk-through](understanding_tinyadder.md) of how this thing works.  It's beautiful and skanky all at once.
 
+Now I'm developing vis_adder.py, which draws the output of each layer as a labeled heatmap, along with some notes about what's going on.  This is all done in Raylib, and you can zoom in/out to shift between overview and detail.  Also, you can change the inputs, and step forward and backward through generation of the output.
+
